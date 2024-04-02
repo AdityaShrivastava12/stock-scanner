@@ -21,6 +21,7 @@ def download_bhavcopy_file(date):
 def get_dates_for_bhavcopies():
     comparator_days = 5
     today = date.today()
+    # today = today - timedelta(days=1)
     comparator_date = today - timedelta(days=comparator_days)
 
     if(today.strftime("%A") == "Saturday"):
